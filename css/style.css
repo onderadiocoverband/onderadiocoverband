@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.4;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.main-wrapper {
+  min-height: 170vh;
+  background: linear-gradient(#322251, #dc1c82);
+}
+
+.top-bar {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  color: white;
+  margin-right: 8px;
+}
+
+.socials ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.socials li {
+  margin-right: 1rem;
+  font-size: 28px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-content {
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-panel {
+  display: flex;
+  flex: 55;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  color: white;
+}
+
+.about-img {
+  display: flex;
+  flex: 45;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.images-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.little-img {
+  cursor: pointer;
+  margin: 8px 8px 0 0;
+  opacity: 1;
+}
+
+.little-img:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.music-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.music-content audio {
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.music-title {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 28px;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+#listen-div {
+  font-size: 20px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+#listen-div span {
+  line-height: 2.5;
+}
+
+#listen-div i {
+  margin-left: 8px;
+  font-size: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  width: 100%;
+  background-color: #dc1c82;
+}
+
+.footer-spacer {
+  height: 80%;
+  align-self: center;
+  width: 1px;
+  background-color: white;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+#mail,
+#phone {
+  font-size: 22px;
+  margin-left: 16px;
+  line-height: 2;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.footer-socials span,
+.footer-contacts span {
+  color: white;
+  font-size: 28px;
+}
+
+.footer-socials ul {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  width: 50%;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.footer-socials a {
+  font-size: 36px;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #listen-div {
+    display: none;
+  }
+
+  .about-panel {
+    padding-top: 2rem;
+  }
+
+  .music-content {
+    margin-top: 8px;
+  }
+
+  .about-img {
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer-socials,
+  .footer-contacts {
+    width: 100%;
+  }
+
+  .music-title {
+    font-size: 20px;
+  }
+
+  .footer-socials span {
+    font-size: 22px;
+  }
+
+  .footer-socials ul {
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  .footer-socials a {
+    font-size: 24px;
+  }
+
+  .footer-spacer {
+    display: none;
+  }
+
+  #follow-us {
+    display: none;
+  }
+
+  .contact {
+    font-size: 24px;
+  }
+
+  #mail,
+  #phone {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}
